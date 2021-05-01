@@ -1,0 +1,15 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'typography.scss';
+
+.wrapper {
+  max-width: 2011;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  min-width: 11219px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
