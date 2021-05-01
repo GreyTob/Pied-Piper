@@ -87,6 +87,27 @@ h6 {
   font-size: calc( 50px + 22 * ((100vw - 320px) / 1691));
   line-height: 84px; }
 
+.theProplem h2 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc( 40px + 24 * ((100vw - 320px) / 1691));
+  line-height: 75px; }
+
+.theProplem p {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc( 24px + 8 * ((100vw - 320px) / 1691));
+  line-height: 37px; }
+
+.hero {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 500;
+  font-size: calc( 32px + 16 * ((100vw - 320px) / 1691));
+  line-height: 56px; }
+
 .header {
   padding-top: 20px;
   min-height: 84px;
@@ -110,7 +131,7 @@ h6 {
 
 .jumbotron {
   margin-top: 84px;
-  background: pink url(../img/jumbotron/fon.jpg); }
+  background: pink url(../img/jumbotron/fon.jpg) no-repeat 50% 50%; }
   .jumbotron .flex-box {
     display: flex;
     justify-content: center;
@@ -118,6 +139,32 @@ h6 {
     min-height: 403px; }
   .jumbotron h1 {
     color: #ffffff; }
+
+.theProplem {
+  background: #eeeeee; }
+  .theProplem h2 {
+    color: #007765;
+    text-align: center;
+    padding-bottom: 16px; }
+  .theProplem p {
+    color: #000000;
+    padding-bottom: 20px; }
+  .theProplem .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 719px; }
+
+.hero {
+  background: url(../img/hero/fon.jpg) no-repeat 50% 50%; }
+  .hero p {
+    text-align: center;
+    color: #ffffff; }
+  .hero .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 483px; }
 
 .wrapper {
   max-width: 2011px;

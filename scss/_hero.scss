@@ -1,0 +1,14 @@
+.hero {
+  background: url(../img/hero/fon.jpg) no-repeat 50% 50%;
+  p {
+    text-align: center;
+    color: $white;
+  }
+
+  .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 483px;
+  }
+}

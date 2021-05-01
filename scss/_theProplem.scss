@@ -1,0 +1,21 @@
+.theProplem {
+  background: $gallery;
+
+  h2 {
+    color: $tropical;
+    text-align: center;
+    padding-bottom: 16px;
+  }
+
+  p {
+    color: $black;
+    padding-bottom: 20px;
+  }
+
+  .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 719px;
+  }
+}
