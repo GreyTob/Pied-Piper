@@ -1,31 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
 * {
   padding: 0;
   margin: 0;
-  border: 0;
-}
+  border: 0; }
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-}
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 :focus,
 :active {
-  outline: none;
-}
+  outline: none; }
 
 a:focus,
 a:active {
-  outline: none;
-}
+  outline: none; }
 
 nav,
 footer,
 header,
 aside {
-  display: block;
-}
+  display: block; }
 
 html,
 body {
@@ -36,44 +34,35 @@ body {
   font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+  -webkit-text-size-adjust: 100%; }
 
 input,
 button,
 textarea {
-  font-family: inherit;
-}
+  font-family: inherit; }
 
 input::-ms-clear {
-  display: none;
-}
+  display: none; }
 
 button {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 button::-moz-focus-inner {
   padding: 0;
-  border: 0;
-}
+  border: 0; }
 
 a,
 a:visited {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 a:hover {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 ul li {
-  list-style: none;
-}
+  list-style: none; }
 
 img {
-  vertical-align: top;
-}
+  vertical-align: top; }
 
 h1,
 h2,
@@ -82,18 +71,60 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: inherit;
-}
+  font-weight: inherit; }
+
+.header {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc( 18px + 6 * ((100vw - 320px) / 1691));
+  line-height: 28px; }
+
+.jumbotron {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc( 50px + 22 * ((100vw - 320px) / 1691));
+  line-height: 84px; }
+
+.header {
+  padding-top: 20px;
+  min-height: 84px;
+  background: #007765;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+  .header ul li {
+    display: inline-block;
+    padding: 0 8px;
+    border-right: 2px solid #ffffff; }
+  .header ul li:last-child {
+    border-right: none; }
+  .header ul li a {
+    color: #ffffff; }
+  .header .flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.jumbotron {
+  margin-top: 84px;
+  background: pink url(../img/jumbotron/fon.jpg); }
+  .jumbotron .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 403px; }
+  .jumbotron h1 {
+    color: #ffffff; }
 
 .wrapper {
-  max-width: 2011;
+  max-width: 2011px;
   margin: 0 auto;
-  position: relative;
-}
+  position: relative; }
 
 .container {
-  min-width: 11219px;
+  max-width: 1219px;
   margin: 0 auto;
-  padding: 0 55px;
-}
-/*# sourceMappingURL=common.css.map */
+  padding: 0 55px; }

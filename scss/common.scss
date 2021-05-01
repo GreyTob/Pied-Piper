@@ -1,15 +1,19 @@
-@import 'reset.scss';
-@import 'variables.scss';
-@import 'typography.scss';
+@import './reset.scss';
+@import './variables.scss';
+@import './typography.scss';
+@import './header.scss';
+@import './jumbotron';
 
 .wrapper {
-  max-width: 2011;
+  max-width: 2011px;
+  //max-width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
 .container {
-  min-width: 11219px;
+  max-width: 1219px;
+  //max-width: 100%;
   margin: 0 auto;
   padding: 0 55px;
 }

@@ -1,0 +1,35 @@
+.header {
+  //max-width: 100%;
+  padding-top: 20px;
+  min-height: 84px;
+  background: $tropical;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  // .logo {
+  //   padding-left: 55px;
+  // }
+
+  ul li {
+    display: inline-block;
+    padding: 0 8px;
+    border-right: 2px solid $white;
+  }
+
+  ul li:last-child {
+    // margin-right: 55px;
+    border-right: none;
+  }
+
+  ul li a {
+    color: $white;
+  }
+
+  .flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
