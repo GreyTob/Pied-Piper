@@ -12,18 +12,20 @@ $maxWidth: 2011;
 }
 
 .header {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  @include adaptiv-font(24, 18);
-  line-height: 28px;
+  ul {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    @include adaptiv-font(24, 20);
+    line-height: 28px;
+  }
 }
 
 .jumbotron {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  @include adaptiv-font(72, 50);
+  @include adaptiv-font(72, 45);
   line-height: 84px;
 }
 
@@ -32,7 +34,7 @@ $maxWidth: 2011;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
-    @include adaptiv-font(64, 40);
+    @include adaptiv-font(64, 35);
     line-height: 75px;
   }
 
@@ -40,7 +42,7 @@ $maxWidth: 2011;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    @include adaptiv-font(32, 24);
+    @include adaptiv-font(32, 18);
     line-height: 37px;
 
     & strong {
@@ -53,7 +55,7 @@ $maxWidth: 2011;
   font-family: Roboto;
   font-style: italic;
   font-weight: 500;
-  @include adaptiv-font(48, 32);
+  @include adaptiv-font(48, 30);
   line-height: 56px;
 }
 
@@ -70,7 +72,7 @@ $maxWidth: 2011;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    @include adaptiv-font(32, 24);
+    @include adaptiv-font(32, 22);
     line-height: 37px;
   }
 }

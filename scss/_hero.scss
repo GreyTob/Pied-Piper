@@ -12,3 +12,12 @@
     min-height: 483px;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    line-height: 35px;
+    .flex-box {
+      min-height: 383px;
+    }
+  }
+}

@@ -1,6 +1,5 @@
 .jumbotron {
   margin-top: 84px;
-  //min-height: 403px;
   background: pink url(../img/jumbotron/fon.jpg) no-repeat 50% 50%;
 
   .flex-box {
@@ -11,5 +10,14 @@
   }
   h1 {
     color: $white;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    .flex-box {
+      padding-top: 84px;
+    }
   }
 }

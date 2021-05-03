@@ -5,6 +5,7 @@
   .userPhoto {
     color: $tropical;
     text-align: center;
+    margin-bottom: 56px;
   }
 
   .figcaption {
@@ -25,35 +26,64 @@
   .content {
     width: 100%;
   }
+
+  .user {
+    .item {
+      .flex {
+        display: flex;
+        justify-content: center;
+      }
+
+      .userPhoto {
+        width: 168px;
+        height: 168px;
+        background: darkgray;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 168px;
+        margin-bottom: 12px;
+      }
+
+      figcaption {
+        text-align: center;
+      }
+    }
+  }
+
+  .grid-box {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    //column-gap: 212px;
+    row-gap: 82px;
+  }
 }
 
-.user {
-  .item {
-    .flex {
-      display: flex;
-      justify-content: center;
+@media (max-width: 768px) {
+  .theTeam {
+    .flex-box {
+      min-height: 950px;
     }
-
-    .userPhoto {
-      width: 168px;
-      height: 168px;
-      background: darkgray;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 168px;
-      margin-bottom: 12px;
-    }
-
-    figcaption {
-      text-align: center;
+    .grid-box {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 42px;
     }
   }
 }
 
-.grid-box {
-  display: grid;
+@media (max-width: 576px) {
+  .theTeam {
+    h2 {
+      margin-bottom: 30px;
+    }
 
-  grid-template-columns: 1fr 1fr 1fr;
-  //column-gap: 212px;
-  row-gap: 82px;
+    .flex-box {
+      min-height: 1650px;
+    }
+
+    .grid-box {
+      grid-template-columns: 1fr;
+      row-gap: 12px;
+    }
+  }
 }

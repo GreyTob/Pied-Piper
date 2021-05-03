@@ -7,7 +7,6 @@
   }
 
   p {
-    padding-top: 17px;
     margin-bottom: 23px;
   }
 
@@ -22,5 +21,29 @@
     display: grid;
     grid-template-columns: 1fr 8fr;
     gap: 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  .PPC {
+    h2 {
+      line-height: 45px;
+    }
+
+    p {
+      line-height: 27px;
+    }
+
+    .flex-box {
+      min-height: 850px;
+    }
+
+    .grid-box {
+      grid-template-columns: 1fr;
+    }
+
+    .img {
+      text-align: center;
+    }
   }
 }
