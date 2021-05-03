@@ -74,3 +74,30 @@ $maxWidth: 2011;
     line-height: 37px;
   }
 }
+
+.theTeam {
+  h2,
+  .userPhoto {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    @include adaptiv-font(64, 40);
+    line-height: 75px;
+  }
+
+  .figcaption {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    @include adaptiv-font(24, 18);
+    line-height: 28px;
+
+    em {
+      font-family: Roboto, sans-serif;
+      font-style: italic;
+      font-weight: normal;
+      @include adaptiv-font(18, 14);
+      line-height: 21px;
+    }
+  }
+}

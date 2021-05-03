@@ -1,3 +1,59 @@
 .theTeam {
   background: $gallery;
+
+  h2,
+  .userPhoto {
+    color: $tropical;
+    text-align: center;
+  }
+
+  .figcaption {
+    color: $tropical;
+
+    em {
+      color: $black;
+    }
+  }
+
+  .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 845px;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+.user {
+  .item {
+    .flex {
+      display: flex;
+      justify-content: center;
+    }
+
+    .userPhoto {
+      width: 168px;
+      height: 168px;
+      background: darkgray;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 168px;
+      margin-bottom: 12px;
+    }
+
+    figcaption {
+      text-align: center;
+    }
+  }
+}
+
+.grid-box {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  //column-gap: 212px;
+  row-gap: 82px;
 }
