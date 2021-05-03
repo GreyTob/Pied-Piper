@@ -145,6 +145,13 @@ h6 {
     font-size: calc( 14px + 4 * ((100vw - 320px) / 1691));
     line-height: 21px; }
 
+.footer p {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc( 14px + 4 * ((100vw - 320px) / 1691));
+  line-height: 21px; }
+
 .header {
   padding-top: 20px;
   min-height: 84px;
@@ -259,6 +266,18 @@ h6 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 82px; }
+
+.footer {
+  background: #333333; }
+  .footer p {
+    color: #ffffff;
+    max-width: 540px;
+    text-align: center; }
+  .footer .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 176px; }
 
 .wrapper {
   max-width: 2011px;
