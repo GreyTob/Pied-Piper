@@ -100,6 +100,8 @@ h6 {
   font-weight: normal;
   font-size: calc( 24px + 8 * ((100vw - 320px) / 1691));
   line-height: 37px; }
+  .theProplem p strong {
+    font-weight: 700; }
 
 .hero {
   font-family: Roboto;
@@ -107,6 +109,20 @@ h6 {
   font-weight: 500;
   font-size: calc( 32px + 16 * ((100vw - 320px) / 1691));
   line-height: 56px; }
+
+.PPC h2 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc( 40px + 24 * ((100vw - 320px) / 1691));
+  line-height: 75px; }
+
+.PPC p {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc( 24px + 8 * ((100vw - 320px) / 1691));
+  line-height: 37px; }
 
 .header {
   padding-top: 20px;
@@ -165,6 +181,27 @@ h6 {
     justify-content: center;
     align-items: center;
     min-height: 483px; }
+
+.PPC {
+  background: #ffffff; }
+  .PPC h2 {
+    text-align: center;
+    margin-bottom: 16px; }
+  .PPC p {
+    padding-top: 17px;
+    margin-bottom: 23px; }
+  .PPC .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 604px; }
+  .PPC .grid-box {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    gap: 4%; }
+
+.theTeam {
+  background: #eeeeee; }
 
 .wrapper {
   max-width: 2011px;

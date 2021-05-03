@@ -40,9 +40,12 @@ $maxWidth: 2011;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    // font-size: 32px;
     @include adaptiv-font(32, 24);
     line-height: 37px;
+
+    & strong {
+      font-weight: 700;
+    }
   }
 }
 
@@ -52,4 +55,22 @@ $maxWidth: 2011;
   font-weight: 500;
   @include adaptiv-font(48, 32);
   line-height: 56px;
+}
+
+.PPC {
+  h2 {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    @include adaptiv-font(64, 40);
+    line-height: 75px;
+  }
+
+  p {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    @include adaptiv-font(32, 24);
+    line-height: 37px;
+  }
 }
