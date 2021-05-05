@@ -74,13 +74,13 @@ h6 {
   font-weight: inherit; }
 
 .header {
-  padding-top: 20px;
-  min-height: 84px;
+  padding: 20px 0;
   background: #007765;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  z-index: 100; }
   .header ul li {
     display: inline-block;
     padding: 0 8px;
@@ -88,14 +88,18 @@ h6 {
   .header ul li:last-child {
     border-right: none; }
   .header ul li a {
-    color: #ffffff; }
+    color: #ffffff;
+    transition: all 0.3s ease-in-out; }
+  .header ul li a:hover {
+    color: #333333; }
   .header .flex-box {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+  .header abbr {
+    text-decoration: none; }
 
 .jumbotron {
-  margin-top: 84px;
   background: url(../img/jumbotron/fon.jpg) center center/cover no-repeat;
   width: 100%;
   padding: 160px 0; }
@@ -295,6 +299,9 @@ h6 {
   font-weight: normal;
   font-size: calc( 14px + 4 * ((100vw - 320px) / 3120));
   line-height: 21px; }
+
+body {
+  padding-top: 85px; }
 
 .wrapper {
   width: 100%;

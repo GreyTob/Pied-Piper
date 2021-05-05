@@ -1,11 +1,11 @@
 .header {
-  padding-top: 20px;
-  min-height: 84px;
+  padding: 20px 0;
   background: $tropical;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 
   ul li {
     display: inline-block;
@@ -19,6 +19,11 @@
 
   ul li a {
     color: $white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  ul li a:hover {
+    color: $shaft;
   }
 
   .flex-box {
@@ -26,24 +31,8 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  abbr {
+    text-decoration: none;
+  }
 }
-
-// @media (max-width: 768px) {
-//   .header {
-//     text-align: center;
-
-//     .flex-box {
-//       display: block;
-//     }
-
-//     ul {
-//       margin: 15px 0;
-//     }
-
-//     ul li {
-//       display: block;
-//       margin-bottom: 10px;
-//       border: none;
-//     }
-//   }
-// }
