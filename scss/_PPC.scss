@@ -1,53 +1,47 @@
 .PPC {
   background: $white;
+  padding: 50px 0;
 
   h2 {
     text-align: center;
-    margin-bottom: 16px;
   }
 
   p {
-    margin-bottom: 23px;
+    margin-bottom: 35px;
   }
 
-  .flex-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 604px;
+  P:last-child {
+    margin-bottom: 0;
   }
 
   .grid-box {
     display: grid;
     grid-template-columns: 1fr 8fr;
     gap: 4%;
+    margin-top: 16px;
+    margin-bottom: 35px;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+  }
+
+  .img {
+    display: flex;
+    align-items: center;
   }
 }
 
 @media (max-width: 768px) {
   .PPC {
-    h2 {
-      line-height: 45px;
-    }
-
-    p {
-      line-height: 27px;
-    }
-
     .grid-box {
       grid-template-columns: 1fr;
     }
 
     .img {
-      text-align: center;
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .PPC {
-    .flex-box {
-      min-height: 850px;
+      justify-content: center;
+      // margin: 10px 0;
     }
   }
 }

@@ -1,16 +1,10 @@
 .footer {
   background: $shaft;
+  padding: 50px 0;
 
   p {
     color: $white;
     max-width: 540px;
-    text-align: center;
-  }
-
-  .flex-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 176px;
+    margin: 0 auto;
   }
 }

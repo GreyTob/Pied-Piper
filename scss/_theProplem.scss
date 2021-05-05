@@ -1,5 +1,6 @@
 .theProplem {
   background: $gallery;
+  padding: 50px 0;
 
   h2 {
     color: $tropical;
@@ -11,27 +12,12 @@
     color: $black;
     padding-bottom: 20px;
   }
-
-  .flex-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 719px;
-  }
 }
 
 @media (max-width: 768px) {
   .theProplem {
-    h2 {
-      // line-height: 55px;
-    }
-
     p {
       text-align: center;
-    }
-
-    .flex-box {
-      min-height: 619px;
     }
   }
 }

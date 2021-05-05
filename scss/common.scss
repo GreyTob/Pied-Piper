@@ -1,6 +1,5 @@
 @import './reset.scss';
 @import './variables.scss';
-@import './typography.scss';
 @import './header.scss';
 @import './jumbotron';
 @import './theProplem.scss';
@@ -8,6 +7,7 @@
 @import './PPC';
 @import './theTeam';
 @import './footer';
+@import './typography.scss';
 
 .wrapper {
   width: 100%;

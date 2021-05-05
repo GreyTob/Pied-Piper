@@ -1,23 +1,15 @@
 .hero {
-  background: url(../img/hero/fon.jpg) 50% 50% / cover no-repeat;
-  p {
+  background: url(../img/hero/fon.jpg) center center / cover no-repeat;
+
+  .hero-message {
     text-align: center;
     color: $white;
+    padding: 127px 0;
   }
 
   .flex-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 483px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    line-height: 35px;
-    .flex-box {
-      min-height: 383px;
-    }
   }
 }
