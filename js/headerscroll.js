@@ -1,10 +1,10 @@
+//плавная пеермотка по якорной ссылке
 //шапка не накрывает контент при переходе по якорным ссылкам
-$('.nav').on('click', function () {
-  if (this.hash) $(document).data('h', 1)
-})
-$(document).scroll(function () {
-  if ($(this).data('h'))
-    $(this)
-      .data('h', 0)
-      .scrollTop($(this).scrollTop() - 84)
+$(document).ready(function () {
+  $('#menu').on('click', 'a', function (event) {
+    event.preventDefault()
+    let id = $(this).attr('href'),
+      top = $(id).offset().top
+    $('body,html').animate({ scrollTop: top - 84 }, 500)
+  })
 })
