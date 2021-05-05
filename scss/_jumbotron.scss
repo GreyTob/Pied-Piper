@@ -1,6 +1,7 @@
 .jumbotron {
   margin-top: 84px;
-  background: pink url(../img/jumbotron/fon.jpg) no-repeat 50% 50%;
+  background: url(../img/jumbotron/fon.jpg) 50% 50% / cover no-repeat;
+  width: 100%;
 
   .flex-box {
     display: flex;

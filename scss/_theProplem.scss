@@ -22,22 +22,16 @@
 
 @media (max-width: 768px) {
   .theProplem {
-    background: $gallery;
-
     h2 {
-      padding-bottom: 10px;
-      line-height: 45px;
+      // line-height: 55px;
     }
 
     p {
-      color: $black;
-      padding-bottom: 15px;
-      line-height: 24px;
       text-align: center;
     }
 
     .flex-box {
-      min-height: 680px;
+      min-height: 619px;
     }
   }
 }

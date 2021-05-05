@@ -77,28 +77,28 @@ h6 {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: calc( 20px + 4 * ((100vw - 320px) / 1691));
+  font-size: calc( 20px + 4 * ((100vw - 320px) / 3120));
   line-height: 28px; }
 
 .jumbotron {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: calc( 45px + 27 * ((100vw - 320px) / 1691));
+  font-size: calc( 45px + 27 * ((100vw - 320px) / 3120));
   line-height: 84px; }
 
 .theProplem h2 {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: calc( 35px + 29 * ((100vw - 320px) / 1691));
+  font-size: calc( 35px + 29 * ((100vw - 320px) / 3120));
   line-height: 75px; }
 
 .theProplem p {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: calc( 18px + 14 * ((100vw - 320px) / 1691));
+  font-size: calc( 19px + 13 * ((100vw - 320px) / 3120));
   line-height: 37px; }
   .theProplem p strong {
     font-weight: 700; }
@@ -107,21 +107,21 @@ h6 {
   font-family: Roboto;
   font-style: italic;
   font-weight: 500;
-  font-size: calc( 30px + 18 * ((100vw - 320px) / 1691));
+  font-size: calc( 30px + 18 * ((100vw - 320px) / 3120));
   line-height: 56px; }
 
 .PPC h2 {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: calc( 40px + 24 * ((100vw - 320px) / 1691));
+  font-size: calc( 40px + 24 * ((100vw - 320px) / 3120));
   line-height: 75px; }
 
 .PPC p {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: calc( 22px + 10 * ((100vw - 320px) / 1691));
+  font-size: calc( 22px + 10 * ((100vw - 320px) / 3120));
   line-height: 37px; }
 
 .theTeam h2,
@@ -129,27 +129,27 @@ h6 {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: calc( 40px + 24 * ((100vw - 320px) / 1691));
+  font-size: calc( 40px + 24 * ((100vw - 320px) / 3120));
   line-height: 75px; }
 
 .theTeam .figcaption {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: calc( 18px + 6 * ((100vw - 320px) / 1691));
+  font-size: calc( 18px + 6 * ((100vw - 320px) / 3120));
   line-height: 28px; }
   .theTeam .figcaption em {
     font-family: Roboto, sans-serif;
     font-style: italic;
     font-weight: normal;
-    font-size: calc( 14px + 4 * ((100vw - 320px) / 1691));
+    font-size: calc( 14px + 4 * ((100vw - 320px) / 3120));
     line-height: 21px; }
 
 .footer p {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: calc( 14px + 4 * ((100vw - 320px) / 1691));
+  font-size: calc( 14px + 4 * ((100vw - 320px) / 3120));
   line-height: 21px; }
 
 .header {
@@ -187,7 +187,8 @@ h6 {
 
 .jumbotron {
   margin-top: 84px;
-  background: pink url(../img/jumbotron/fon.jpg) no-repeat 50% 50%; }
+  background: url(../img/jumbotron/fon.jpg) 50% 50%/cover no-repeat;
+  width: 100%; }
   .jumbotron .flex-box {
     display: flex;
     justify-content: center;
@@ -217,21 +218,13 @@ h6 {
     min-height: 719px; }
 
 @media (max-width: 768px) {
-  .theProplem {
-    background: #eeeeee; }
-    .theProplem h2 {
-      padding-bottom: 10px;
-      line-height: 45px; }
-    .theProplem p {
-      color: #000000;
-      padding-bottom: 15px;
-      line-height: 24px;
-      text-align: center; }
-    .theProplem .flex-box {
-      min-height: 680px; } }
+  .theProplem p {
+    text-align: center; }
+  .theProplem .flex-box {
+    min-height: 619px; } }
 
 .hero {
-  background: url(../img/hero/fon.jpg) no-repeat 50% 50%; }
+  background: url(../img/hero/fon.jpg) 50% 50%/cover no-repeat; }
   .hero p {
     text-align: center;
     color: #ffffff; }
@@ -269,12 +262,14 @@ h6 {
     line-height: 45px; }
   .PPC p {
     line-height: 27px; }
-  .PPC .flex-box {
-    min-height: 850px; }
   .PPC .grid-box {
     grid-template-columns: 1fr; }
   .PPC .img {
     text-align: center; } }
+
+@media (max-width: 576px) {
+  .PPC .flex-box {
+    min-height: 850px; } }
 
 .theTeam {
   background: #eeeeee; }
@@ -341,7 +336,7 @@ h6 {
     min-height: 176px; }
 
 .wrapper {
-  max-width: 2011px;
+  width: 100%;
   margin: 0 auto;
   position: relative; }
 

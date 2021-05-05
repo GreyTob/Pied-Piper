@@ -34,16 +34,20 @@
       line-height: 27px;
     }
 
-    .flex-box {
-      min-height: 850px;
-    }
-
     .grid-box {
       grid-template-columns: 1fr;
     }
 
     .img {
       text-align: center;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .PPC {
+    .flex-box {
+      min-height: 850px;
     }
   }
 }
