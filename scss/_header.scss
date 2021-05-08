@@ -1,38 +1,131 @@
 .header {
   padding: 20px 0;
-  background: $tropical;
   position: fixed;
+  height: 84px;
+  width: 100%;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 100;
 
-  ul li {
-    display: inline-block;
-    padding: 0 8px;
-    border-right: 2px solid $white;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $tropical;
+    z-index: 10;
   }
 
-  ul li:last-child {
-    border-right: none;
+  .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
   }
 
-  ul li a {
+  .burger {
+    display: none;
+  }
+
+  .logo {
+    flex: 0 0 184px;
+    overflow: hidden;
+    position: relative;
+    z-index: 15;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .list {
+    display: flex;
+  }
+
+  .list li {
+    margin-left: 8px;
+    color: $white;
+    position: relative;
+    z-index: 15;
+  }
+
+  .list li a {
     color: $white;
     transition: all 0.3s ease-in-out;
   }
 
-  ul li a:hover {
+  .list li a:hover {
     color: $shaft;
-  }
-
-  .flex-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   abbr {
     text-decoration: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 14px 0;
+    height: 50px;
+
+    .logo {
+      flex: 0 0 104px;
+    }
+
+    .burger {
+      display: block;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 15;
+    }
+
+    .burger:before,
+    .burger:after,
+    .burger span {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: $white;
+      height: 2px;
+    }
+
+    .burger span {
+      top: 8px;
+    }
+
+    .burger:before {
+      top: 0;
+    }
+
+    .burger:after {
+      bottom: 1px;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $shaft;
+      padding: 80px 10px 20px 20px;
+      // z-index: 2;
+    }
+
+    .list {
+      display: block;
+    }
+
+    .list li {
+      margin-bottom: 20px;
+    }
+
+    .list li.visible {
+      display: none;
+    }
   }
 }

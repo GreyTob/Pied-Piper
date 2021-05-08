@@ -75,29 +75,91 @@ h6 {
 
 .header {
   padding: 20px 0;
-  background: #007765;
   position: fixed;
+  height: 84px;
+  width: 100%;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 100; }
-  .header ul li {
-    display: inline-block;
-    padding: 0 8px;
-    border-right: 2px solid #ffffff; }
-  .header ul li:last-child {
-    border-right: none; }
-  .header ul li a {
-    color: #ffffff;
-    transition: all 0.3s ease-in-out; }
-  .header ul li a:hover {
-    color: #333333; }
-  .header .flex-box {
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #007765;
+    z-index: 10; }
+  .header .body {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
+  .header .burger {
+    display: none; }
+  .header .logo {
+    flex: 0 0 184px;
+    overflow: hidden;
+    position: relative;
+    z-index: 15; }
+    .header .logo img {
+      max-width: 100%; }
+  .header .list {
+    display: flex; }
+  .header .list li {
+    margin-left: 8px;
+    color: #ffffff;
+    position: relative;
+    z-index: 15; }
+  .header .list li a {
+    color: #ffffff;
+    transition: all 0.3s ease-in-out; }
+  .header .list li a:hover {
+    color: #333333; }
   .header abbr {
     text-decoration: none; }
+
+@media (max-width: 767px) {
+  .header {
+    padding: 14px 0;
+    height: 50px; }
+    .header .logo {
+      flex: 0 0 104px; }
+    .header .burger {
+      display: block;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 15; }
+    .header .burger:before,
+    .header .burger:after,
+    .header .burger span {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      height: 2px; }
+    .header .burger span {
+      top: 8px; }
+    .header .burger:before {
+      top: 0; }
+    .header .burger:after {
+      bottom: 1px; }
+    .header .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #333333;
+      padding: 80px 10px 20px 20px; }
+    .header .list {
+      display: block; }
+    .header .list li {
+      margin-bottom: 20px; }
+    .header .list li.visible {
+      display: none; } }
 
 .jumbotron {
   background: url(../img/jumbotron/fon.jpg) center center/cover no-repeat;
@@ -153,7 +215,8 @@ h6 {
     align-items: center; }
   .PPC .img {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    border-radius: 55%; }
 
 @media (max-width: 768px) {
   .PPC .grid-box {
@@ -179,6 +242,7 @@ h6 {
     text-align: center;
     line-height: 168px;
     margin-bottom: 12px;
+    overflow: hidden;
     transition: box-shadow 0.3s ease-in-out; }
     .theTeam .user .item .userPhoto:hover {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
@@ -304,7 +368,7 @@ h6 {
   line-height: 21px; }
 
 body {
-  padding-top: 85px; }
+  padding-top: 84px; }
 
 .wrapper {
   width: 100%;

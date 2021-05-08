@@ -27,7 +27,7 @@ function navHandler() {
       //подумать как закончить скрипт без jQuery
 
       //перемещаюсь к нужной координате за вычетом величины header - 84px (header {display: fixed})
-      $('body,html').animate({ scrollTop: TopCoord - 84 }, 500)
+      $('body,html').animate({ scrollTop: TopCoord - 83 }, 500)
     })
   }
 }
