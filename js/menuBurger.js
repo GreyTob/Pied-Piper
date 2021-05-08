@@ -16,9 +16,22 @@ document.addEventListener('DOMContentLoaded', function () {
     elem.addEventListener('click', () => {
       burger.classList.toggle('active')
       menu.classList.toggle('active')
-    })
+      document.body.classList.toggle('lock')
 
-    // elem.classList.toggle('active')
-    // console.log(li)
+      //пример скрола в htaderscroll.js
+      const currentElement = document.querySelector(elem.getAttribute('href'))
+
+      function getCoords(elem) {
+        let box = elem.getBoundingClientRect()
+        return {
+          top: box.top + pageYOffset,
+          left: box.left + pageXOffset,
+        }
+      }
+
+      const TopCoord = getCoords(currentElement)['top']
+
+      $('body,html').animate({ scrollTop: TopCoord - 49 }, 100)
+    })
   }
 })
