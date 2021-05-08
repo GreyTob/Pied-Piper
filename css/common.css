@@ -336,7 +336,7 @@ h6 {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: calc( 40px + 24 * ((100vw - 320px) / 3120));
+  font-size: calc( 38px + 26 * ((100vw - 320px) / 3120));
   line-height: 75px; }
 
 .PPC p {
@@ -399,4 +399,6 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 25px; } }
+    padding: 0 25px; }
+  body {
+    padding-top: 50px; } }
