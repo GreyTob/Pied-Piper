@@ -95,25 +95,46 @@
 
     .burger span {
       top: 8px;
+      transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
     }
 
     .burger:before {
       top: 0;
+      transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
     }
 
     .burger:after {
       bottom: 1px;
+      transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+
+    .burger.active:before {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+
+    .burger.active:after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+
+    .burger.active span {
+      transform: scale(0);
     }
 
     .menu {
       position: fixed;
       top: 0;
-      left: 0;
+      left: -100%;
       width: 100%;
       height: 100%;
       background-color: $shaft;
       padding: 80px 10px 20px 20px;
-      // z-index: 2;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .menu.active {
+      left: 0%;
     }
 
     .list {

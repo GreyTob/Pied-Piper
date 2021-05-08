@@ -141,19 +141,33 @@ h6 {
       background-color: #ffffff;
       height: 2px; }
     .header .burger span {
-      top: 8px; }
+      top: 8px;
+      transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045); }
     .header .burger:before {
-      top: 0; }
+      top: 0;
+      transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045); }
     .header .burger:after {
-      bottom: 1px; }
+      bottom: 1px;
+      transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045); }
+    .header .burger.active:before {
+      transform: rotate(45deg);
+      top: 9px; }
+    .header .burger.active:after {
+      transform: rotate(-45deg);
+      bottom: 9px; }
+    .header .burger.active span {
+      transform: scale(0); }
     .header .menu {
       position: fixed;
       top: 0;
-      left: 0;
+      left: -100%;
       width: 100%;
       height: 100%;
       background-color: #333333;
-      padding: 80px 10px 20px 20px; }
+      padding: 80px 10px 20px 20px;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .header .menu.active {
+      left: 0%; }
     .header .list {
       display: block; }
     .header .list li {
