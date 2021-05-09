@@ -1,8 +1,12 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function (Event) {
+  Event.preventDefault()
+
   const burger = document.getElementById('burger')
   const menu = document.getElementById('menu')
 
-  burger.addEventListener('click', () => {
+  burger.addEventListener('click', (Event) => {
+    Event.preventDefault()
+
     burger.classList.toggle('active')
     menu.classList.toggle('active')
 
@@ -19,19 +23,24 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.classList.toggle('lock')
 
       //пример скрола в htaderscroll.js
-      const currentElement = document.querySelector(elem.getAttribute('href'))
+      const deviceWidth = document.getElementById('header')
+      let currentWidth = deviceWidth.clientWidth
 
-      function getCoords(elem) {
-        let box = elem.getBoundingClientRect()
-        return {
-          top: box.top + pageYOffset,
-          left: box.left + pageXOffset,
+      if (currentWidth <= 767) {
+        const currentElement = document.querySelector(elem.getAttribute('href'))
+
+        function getCoords(elem) {
+          let box = elem.getBoundingClientRect()
+          return {
+            top: box.top + pageYOffset,
+            left: box.left + pageXOffset,
+          }
         }
+
+        const TopCoord = getCoords(currentElement)['top']
+
+        $('body,html').animate({ scrollTop: TopCoord - 49 }, 500)
       }
-
-      const TopCoord = getCoords(currentElement)['top']
-
-      $('body,html').animate({ scrollTop: TopCoord - 49 }, 100)
     })
   }
 })

@@ -1,35 +1,62 @@
 //свое решение
 function navHandler() {
   //выбираю нужный элементы
-  for (let elem of document.querySelectorAll('.header a')) {
+  for (let elem of document.querySelectorAll('.menu a')) {
     //вешаю на выбранные элементы события
     elem.addEventListener('click', function (event) {
       event.preventDefault()
 
-      //получаю значение атрибута href (this = elem)
-      let id = this.getAttribute('href')
+      //вычсиляю текущую ширину экрана по элементу растянутому во всю штрину
+      const deviceWidth = document.getElementById('header')
+      let currentWidth = deviceWidth.clientWidth
 
-      //нахожу элемент с нужным href
-      const currentElement = document.querySelector(id)
+      if (currentWidth > 767) {
+        //получаю значение атрибута href (this = elem)
+        let id = this.getAttribute('href')
 
-      //получаю координаты нужного элемента
-      function getCoords(elem) {
-        let box = elem.getBoundingClientRect()
-        return {
-          top: box.top + pageYOffset,
-          left: box.left + pageXOffset,
+        //нахожу элемент с нужным href
+        const currentElement = document.querySelector(id)
+
+        //получаю координаты нужного элемента
+        function getCoords(elem) {
+          let box = elem.getBoundingClientRect()
+          return {
+            top: box.top + pageYOffset,
+            left: box.left + pageXOffset,
+          }
         }
+
+        //получаю координату Top
+        const TopCoord = getCoords(currentElement)['top']
+
+        //подумать как закончить скрипт без jQuery
+
+        //перемещаюсь к нужной координате за вычетом величины header - 84px (header {display: fixed})
+        $('body,html').animate({ scrollTop: TopCoord - 83 }, 500)
       }
-
-      //получаю координату Top
-      const TopCoord = getCoords(currentElement)['top']
-
-      //подумать как закончить скрипт без jQuery
-
-      //перемещаюсь к нужной координате за вычетом величины header - 84px (header {display: fixed})
-      $('body,html').animate({ scrollTop: TopCoord - 83 }, 500)
     })
   }
+  //для logo
+  const logo = document.querySelector('.logo a')
+  logo.addEventListener('click', function (event) {
+    event.preventDefault()
+
+    let id = logo.getAttribute('href')
+
+    const currentElement = document.querySelector(id)
+
+    function getCoords(elem) {
+      let box = elem.getBoundingClientRect()
+      return {
+        top: box.top + pageYOffset,
+        left: box.left + pageXOffset,
+      }
+    }
+
+    const TopCoord = getCoords(currentElement)['top']
+
+    $('body,html').animate({ scrollTop: TopCoord - 83 }, 500)
+  })
 }
 
 //решения от сюда https://realadmin.ru/coding/js-scroll.html
