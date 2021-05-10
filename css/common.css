@@ -273,14 +273,19 @@ h6 {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 82px; }
 
-@media (max-width: 768px) {
-  .theTeam .grid-box {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 40px; } }
+@media (max-width: 767px) {
+  .theTeam {
+    padding: 30px 0; }
+    .theTeam .grid-box {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 40px; } }
 
 @media (max-width: 576px) {
-  .theTeam .grid-box {
-    grid-template-columns: 1fr; } }
+  .theTeam {
+    padding: 15px 0; }
+    .theTeam .grid-box {
+      grid-template-columns: 1fr;
+      row-gap: 20px; } }
 
 .footer {
   background: #333333;
